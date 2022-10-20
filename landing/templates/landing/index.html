@@ -1,0 +1,148 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <main>
+        <section class="leader morning">
+            <div class="leader_info_container">
+                <div class="leader_headers">
+                    <h1>Функциональное обучение людей с расстройством аутистического спектра Натальи Кудашевой.</h1>
+
+                </div>
+                <div class="more_information_button">
+                    <button class="info_button" onclick="window.location.href='#director_section';">
+                        О проекте
+                        <span class="flare"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="pointer-arrow">
+                <a href="#director_section">
+                    <div class="arrow">
+                    </div>
+                </a>
+                <!-- <./script src="arrow-click.js"></script> -->
+            </div>
+        </section>
+        <section id="director_section" class="director_sec">
+            <div class="information_wrapper">
+                <div class="about_director">
+                    <div class="about_director_header">
+                        Руководитель проекта
+                        <div class="line"></div>
+                    </div>
+                    <div class="about_director_text"> Кудашева Наталья Ивановна- практик системы альтернативной
+                        коммуникации PECS.
+                        <br>
+                        Учредитель АНО «Под защитой любви»,
+                        <br>
+                        член региональной группы ПФО «Ментальное
+                        здоровье»,заместитель директора по инклюзивному обучению школы №8 г.Пенза, педагог- дефектолог.
+                        Cпециалист работающий по научно доказанным методикам, таким как:
+                        <br>
+                        <li>Перамидальный подход</li>
+                        <li>АК PECS, ABA – терапия</li>
+                        <li>Структурированный подход TEACHH</li>
+                        <br>
+                        <button class="about_director_button" onclick="window.location.href='{% url 'about' %}';">
+                            Резюме
+                        </button>
+                    </div>
+                </div>
+                <div class="director_photo">
+                    <img src='{% static "landing/images/img.png"%}' class="director_img">
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services_sec">
+            <div class="services_header">
+                Услуги
+            </div>
+            <div class="services_list">
+                <div class="service service_1">
+                    <div class="service_info_wrapper">
+                        <div class="text">Он-лайн консультации родителей / специалистов.</div>
+                        <div class="more_information_button">
+                            <button class="modal-button" href="#myModal1">Подробнее</button>
+                        </div>
+                                                <!-- Trigger/Open The Modal -->
+                        <!-- The Modal -->
+                        <div id="myModal1" class="modal">
+
+                          <!-- Modal content -->
+                          <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>Структурированные ответы на все интересующие вас вопросы (1 астрономический час)</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service service_2">
+                    <div class="service_info_wrapper">
+                        <div class="text">Составление программы социальных и академических навыков (по запросу
+                            родителей / специалиста) <br> + курирование он-лайн</div>
+                        <div class="more_information_button">
+                            <button class="modal-button" href="#myModal2">Подробнее</button>
+                        </div>
+                                                <!-- Trigger/Open The Modal -->
+                        <!-- The Modal -->
+                        <div id="myModal2" class="modal">
+
+                          <!-- Modal content -->
+                          <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>Для родителей: диагностика, составление плана запрашиваемых навыков для ребенка,консультирование, коррекция программы,мониторинг динамики,контроль  работы родителей.  Для специалистов: определение цели и задачей работы, исходя из запроса, диагностика, составление плана запрашиваемых навыков для ребенка,консультирование, коррекция программы,мониторинг динамики,контроль  работы.</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service service_3">
+                    <div class="service_info_wrapper">
+                        <div class="text">Индивидуальное мультимодальное занятие
+                            <br>
+                            <br>
+                            (работа ведется исключительно по научно доказанным методам обучения детей с ментальными
+                            нарушениями)
+                        </div>
+                        <div class="more_information_button">
+                            <button class="modal-button" href="#myModal3">Подробнее</button>
+                        </div>
+                                                <!-- Trigger/Open The Modal -->
+                        <!-- The Modal -->
+                        <div id="myModal3" class="modal">
+
+                          <!-- Modal content -->
+                          <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>Индивидуальное мультимодальное занятие - первое занятие включает в себя определения задач, форм и методов обучения ребенка/ консультация родителей. Продолжительность 1 астрономический час.
+Последующие занятия составляются с учетом потребностей и особенностей конкретного ребенка.
+Продолжительность занятия академический час, т.е. 45 мин в которые поэтапно включены:
+-жизненно необходимые/академические навыки (приобретение и совершенствование навыков обучения: сидеть за столом, слушать инструкцию, развитие внимания, памяти, речи; бытовых навыков)
+- адаптивные физические упражнения с применением сенсорной интеграции (физическое развитие; получение ребенком новой сенсорной информации, развитие зрительной, слуховой, тактильной чувствительности)
+- АРТ терапия/погружение в искусство для развития творческого потенциала ребенка (развитие концентрации внимания; эмоционального контакта ребенка со взрослым; активное развитие мелкой моторики рук, пройдем даже самые начальные стадии такие как - держать карандаш, правильно пользоваться ножницами, красками и другими материалами)
++Консультация/рекомендации для родителей специальным коррекционным и методическим приемам, необходимым для отработки и генерализации навыков с ребенком в домашних условия. Продолжительность 15 мин.</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service service_4">
+                    <div class="service_info_wrapper">
+                        <div class="text">Обучение очное / онлайн (семинар / вебинар / лекция / мастер-класс)</div>
+                        <div class="more_information_button">
+                            <button class="modal-button" href="#myModal4">Подробнее</button>
+                        </div>
+                                                <!-- Trigger/Open The Modal -->
+                        <!-- The Modal -->
+                        <div id="myModal4"  class="modal">
+
+                          <!-- Modal content -->
+                          <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>Осуществляются выездные функциональные тренинги. Разбор практических кейсов по конкретным (запрашиваемым навыкам) навыкам.</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}

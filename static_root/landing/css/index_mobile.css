@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600&display=swap');
+@media screen and (max-width: 900px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Comfortaa', 'cursive';
+    }
+
+    html {
+        scroll-behavior: smooth;
+
+    }
+    /* Modal window contacts */
+
+    #modal_window_contacts {
+        display: none;
+    }
+
+    /* /Modal window contacts */
+
+    /* Arrow up */
+
+    .arrow_up {
+        display: none;
+    }
+    .bx{
+    display: none;
+    }
+
+    .bx-upvote:before{
+    display: none;
+    }
+    @keyframes up {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+    /* /Arrow up */
+
+
+
+    /* Header */
+
+    header {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 2%;
+        background-color: #fff;
+        padding-top: 65px;
+    }
+
+    .left_wrapper {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .left_wrapper .left_menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+
+
+    }
+
+    .left_wrapper .left_menu li {
+        margin: 5px 0;
+        list-style: none;
+    }
+    .left_menu li a{
+        text-decoration: none;
+        color: #000;
+
+    }
+    .logo_wrapper {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 15%;
+        top: 15%;
+    }
+
+    .logo_wrapper img {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    .right_wrapper {
+        width: 100%;
+    }
+    .contacts_info a{
+        text-decoration: none;
+        color: #000;
+    }
+    .right_wrapper .contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .right_wrapper .contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+
+    .right_wrapper .contacts span {
+        margin: 7px 0;
+    }
+
+    .contacts .contacts_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contacts .contacts_info span,
+    a {
+        margin: 7px 0;
+    }
+
+    .social_links_wrapper {
+        margin: 5px 0;
+    }
+
+
+    /* /Header */
+    /* Leader section */
+
+    .leader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-image: url(https://wallpaperaccess.com/full/2979509.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    /* Background images */
+
+    .morning {
+        background-image: url(https://images.hdqwalls.com/wallpapers/colorful-sunset-minimal-4k-0q.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .day {
+        background-image: url(https://free4kwallpapers.com/uploads/originals/2020/09/30/firewatch-sunny-day-wallpaper.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .evening {
+        background-image: url(https://images.hdqwalls.com/wallpapers/river-evening-digital-art-4k-ph.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .night {
+        background-image: url(https://wallpaperaccess.com/full/2979509.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    /* /Background image */
+
+    .leader_info_container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        width: 70%;
+        height: 75vh;
+        background-color: transparent;
+        margin: auto;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .leader_headers {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 250px;
+    }
+
+    .leader_info_container h1 {
+        font-size: 30px;
+    }
+
+    .leader_info_container h3 {
+        font-size: 25px;
+    }
+
+    /* info button */
+
+    .info_button {
+        position: relative;
+        width: 180px;
+        height: 50px;
+        border-radius: 30px;
+        background-color: #F98179;
+        border-color: transparent;
+        border: 0;
+        font-size: 17px;
+        font-weight: 700;
+        cursor: pointer;
+        overflow: hidden;
+        transition: 0.25s;
+    }
+
+    .info_button:hover {
+        background-color: #bd778f;
+        transition: 0.25s;
+    }
+
+    .info_button .flare {
+        position: absolute;
+        top: 0;
+        bottom: 100;
+        width: 30px;
+        height: 150%;
+        transform: skew(30deg);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+        animation: flare 3s infinite linear;
+    }
+
+    @keyframes flare {
+        0% {
+            left: -150%
+        }
+
+        100% {
+            left: 400%
+        }
+    }
+
+    /* /info button */
+
+    /* pointer arrow */
+
+    .pointer-arrow {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+        margin-bottom: 40px;
+    }
+
+    .pointer-arrow .arrow {
+        position: absolute;
+        border-left: 3px solid #fff;
+        border-bottom: 3px solid #fff;
+        height: 22px;
+        width: 22px;
+        transform: rotate(-45deg);
+        animation: arrow 2s infinite;
+    }
+
+    .arrow a {
+        width: 30px;
+        height: 30px;
+    }
+
+    @keyframes arrow {
+        0% {
+            bottom: 10px
+        }
+
+        50% {
+            bottom: 0px;
+        }
+
+        100% {
+            bottom: 10px;
+        }
+
+    }
+
+    /* /pointer arrow */
+
+    /* /Leader section */
+    /* Director section */
+
+    .director_sec {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+        min-height: 100vh;
+        margin-bottom: -20px;
+        padding: 40px 0 20px 0;
+    }
+
+    .information_wrapper {
+        width: 100%;
+        height: fit-content;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about_director {
+        top: unset;
+        left: unset;
+        position: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        width: 80%;
+        height: 100%;
+        background-color: #8ff7b9;
+        border-radius: 30px;
+        padding: 20px 30px 0 30px;
+        margin: 5px 0 20px 0;
+        overflow: hidden;
+    }
+
+    .about_director_button {
+        width: 180px;
+        height: 50px;
+        color: #000;
+        background-color: #F98179;
+        font-size: 17px;
+        font-weight: 700;
+        border-radius: 30px;
+        margin: 10px;
+        border-color: transparent;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .director_photo {
+        margin: 20px 0 5px 0;
+        top: unset;
+        right: unset;
+        position: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: transparent;
+        background-color: transparent;
+        border-radius: 30px;
+    }
+    .director_img {
+    width: 80%;
+    height: auto;
+    border-radius: 30px;
+    }
+
+    .director_photo span {
+        font-size: 25px;
+        transform: unset;
+    }
+
+    /* /Director section */
+
+    /* Services section */
+
+    .services_sec {
+        margin: 40px 0;
+        position: relative;
+        width: 100%;
+        min-height: fit-content;
+    }
+    .services_header {
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .services_list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 90%;
+        margin: 30px auto;
+    }
+
+    .service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100%;
+        background-color: #8ff7b9;
+        margin: 10px 10px;
+        overflow: hidden;
+        padding: 10px;
+        border-radius: 30px;
+    }
+
+    .service_info_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 70%;
+        height: 100%;
+        transition: 3s;
+        overflow: hidden;
+    }
+
+    .service_info_wrapper .text {
+        text-align: center;
+        color: #000;
+        font-size: 20px;
+        transition: 0.1s;
+        transform: unset;
+    }
+
+    .service_info_wrapper .more_information_button button {
+        width: 140px;
+        height: 45px;
+        border-radius: 30px;
+        background-color: #F98179;
+        font-size: 13px;
+        font-weight: 600;
+        opacity: 1;
+        transition: 0.1s;
+        transform: unset;
+        cursor: pointer;
+    }
+
+
+
+    /* /Services section */
+
+    /* Mail form */
+
+    .mail_form_sec {
+        padding: 40px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: fit-content;
+        background-image: url(https://img.youscreen.ru/wall/14977556381291/14977556381291_1920x1200.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+        .send_button {
+        position: relative;
+        width: 50%;
+        height: 56px;
+        background-color: #f98179;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 30px;
+        margin-top: 10px;
+        border-color: transparent;
+        overflow-x: hidden;
+        cursor: pointer;
+        transition: 0.25s;
+        }
+        #email_form {
+        width: 100%;
+    }
+
+    .form_input {
+        width: 50%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 15px 0;
+    }
+
+    .form_input span {
+        float: right;
+    }
+
+    .form_input input {
+        width: 180%;
+        height: 50px;
+        border-radius: 30px;
+        border-color: transparent;
+        background-color: #fff;
+        outline: none;
+        padding: 10px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .form_input textarea {
+        width: 180%;
+        min-height: 70px;
+        max-height: 250px;
+        border-radius: 25px;
+        border-color: transparent;
+        outline: none;
+        padding: 10px;
+        margin-left: 25px;
+
+    }
+    .email_form_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    color: #fff;
+    text-align: center;
+
+}
+    .footer_email{
+        font-size: 1.2rem;
+        color: #fff;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        }
+
+        /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content/Box */
+    .modal-button{
+    }
+    .modal-content {
+      background-color: #8ff7b9;
+      margin: 50% auto; /* 15% from the top and centered */
+      padding: 20px;
+      border-radius: 30px;
+      width: 80%; /* Could be more or less, depending on screen size */
+    }
+
+    /* The Close Button */
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+}
+    /* /Mail form */
