@@ -23,19 +23,38 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 100vh;
-    height: 1000px;
+    min-height: 500px;
+    height: auto;
     margin-bottom: -20px;
 }
 .item_wrapper {
-    position: relative;
-    justify-content: center;
-    width: 80%;
-    height: 800px;
+    position: center;
+    width: 70%;
+    height: auto;
     background-color: transparent;
+
 }
 .item_block {
-list-style:none;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 350px;
+    background-color: #c6ecfb;
+    border-radius: 30px;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+.item_name{
+    text-align: center;
+}
+.item_description{
+    margin: 10px 10px;
+    text-align: center;
+}
+.item_buy_button{
+
 }
 .buy_button {
     width: 180px;
@@ -45,11 +64,11 @@ list-style:none;
     font-size: 17px;
     font-weight: 700;
     border-radius: 30px;
-    bottom: 0;
+    bottom: 5%;
     border-color: transparent;
     cursor: pointer;
     transition: 0.5s;
-    align-items: center;
+    margin-top: auto;
 }
 
 .buy_button:hover {
