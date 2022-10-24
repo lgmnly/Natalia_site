@@ -452,6 +452,7 @@
         transition: 0.1s;
         transform: unset;
         cursor: pointer;
+        color: #000;
     }
 
 
