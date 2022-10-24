@@ -12,3 +12,6 @@ def cv(request):
 
 def shop(request):
     return render(request, 'shop/shop.html', )
+
+def reviews(request):
+    return render(request, 'reviews/reviews.html', )
