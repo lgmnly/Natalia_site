@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+*$py.class
+static_root/
+Landing_app/__pycache__/
+db.sqlite3
